@@ -1,0 +1,20 @@
+# Append "(" in Stack (list) and remove "(" when i == ")", before you remove it, store the length of the list, and compare it with previous length to get the max length.
+
+class Solution(object):
+    def maxDepth(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        stack,currentMax = [],0
+        for i in s:
+                if i == '(':
+                    stack.append(i)
+                    currentMax = max(currentMax,len(stack))
+                    continue
+                elif i == ')':
+                    stack.pop()
+        return currentMax
+
+# Runtime: 15 ms, faster than 75.53% of Python online submissions for Maximum Nesting Depth of the Parentheses.
+# Memory Usage: 13.3 MB, less than 86.88% of Python online submissions for Maximum Nesting Depth of the Parentheses.

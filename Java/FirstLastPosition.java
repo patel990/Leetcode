@@ -19,15 +19,13 @@ class Solution {
                 end = mid -1;
             }
             else {
-                if (firstIndex){
-                    val = mid;
+                if (firstIndex){ 
                     end = mid-1;
                 }
-                else{
-                    val = mid;
+                else{   
                     start = mid+1;
                 }
-
+                val = mid;
             }
 
         }

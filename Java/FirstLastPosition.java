@@ -34,4 +34,8 @@ class Solution {
 
 }
 
+//Runtime: 0 ms, faster than 100.00% of Java online submissions for Find First and Last Position of Element in Sorted Array.
+//Memory Usage: 41.8 MB, less than 95.44% of Java online submissions for Find First and Last Position of Element in Sorted Array.
+
+
 
